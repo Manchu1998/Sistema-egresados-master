@@ -34,7 +34,7 @@
                 </div>
 
                  <div>
-                  <input type="text" class="form-control" placeholder="Password" required="" name="dni" />
+                  <input type="text" class="form-control" placeholder="Password" required="" name="password" />
                 </div>
                 <div>
                   <input class="btn btn-default submit" type="submit" value="Acceder" name="entrar">

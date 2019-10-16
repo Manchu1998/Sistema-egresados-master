@@ -1,6 +1,6 @@
 <?php
 
-   $connectio = "mysql:host=localhost; dbname=sea";
+   $connectio = "mysql:host=localhost; dbname=sei";
    $user = "root";
    $password = "@ignacio1998";
 
