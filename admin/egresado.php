@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>SEI | Sistema Egresado de ITSAE </title>  
+	<title>SEI | Sistema Egresado de ITSAE </title>
   <?php  require_once "include/link_header.php"; ?>
 </head>
 
@@ -18,7 +18,7 @@
               </div>
               <div class="clearfix"></div>
 
-              
+
               <div class="profile clearfix">
                  <div class="profile_pic">
                     <img src="../assets/img/itsae.png" alt="..." class="img-circle profile_img">
@@ -27,7 +27,7 @@
                     <span>Administrador,</span>
                     <h2>Admin.</h2>
                   </div>
-              </div>           
+              </div>
 
               <br />
 
@@ -38,38 +38,38 @@
                   <ul class="nav side-menu">
                     <li><a><i class="fa fa-cog"></i>Configuración<span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
-                        <li><a href="horario.php">Horario</a></li>     
-                        <li><a href="modalidad.php">Modalidad</a></li> 
-                        <li><a href="carrera.php">Carrera</a></li> 
-                        <li><a href="mencion.php">Mencion</a></li>                         
-                        <li><a href="nacionalidad.php">Nacionalidad</a></li>                       
+                        <li><a href="horario.php">Jornada</a></li>
+                        <li><a href="modalidad.php">Modalidad</a></li>
+                        <li><a href="carrera.php">Carrera</a></li>
+                        <li><a href="mencion.php">Mencion</a></li>
+                        <li><a href="nacionalidad.php">Nacionalidad</a></li>
                       </ul>
                     </li>
 
                      <li><a><i class="fa fa-folder-open-o"></i>Ingresar datos<span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
-                        <li><a href="egresado.php">Egresados</a></li>                         
-                        
+                        <li><a href="egresado.php">Egresados</a></li>
+
                       </ul>
                     </li>
 
                     <li><a><i class="fa fa-users"></i>Datos<span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                         <li><a href="datos_egresado.php">Datos generales</a></li>
-                         
+
                       </ul>
                     </li>
                   </ul>
-                </div>               
-              </div>            
+                </div>
+              </div>
             </div>
-          </div> 
-        
-        <?php require_once "include/perfil.php"; ?>        
-       
+          </div>
 
-        
-        <div class="right_col" role="main"> 
+        <?php require_once "include/perfil.php"; ?>
+
+
+
+        <div class="right_col" role="main">
              <div class="page-title">
                 <div class="title_left">
                   <h3><small>Inicio / Egresado o graduado</small></h3>
@@ -93,13 +93,13 @@
 
               <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
-                  <div class="modal-content">                        
+                  <div class="modal-content">
                     <div class="modal-body">
                       <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                           <div class="x_panel">
                             <div class="x_title">
-                              <h2>Datos personales de egresado o graduado</h2>   
+                              <h2>Datos personales de egresado o graduado</h2>
 
                               <div class="clearfix"></div>
 
@@ -107,14 +107,14 @@
 
                             <div class="x_content">
                               <br />
-                              
+
 
                               <form action="clases/insertar_egresado.php"  data-parsley-validate class="form-horizontal form-label-left" method="POST" autocomplete="off">
 
-                                
+
                                 <div class="form-group">
                                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Cedula de Identidad *<span class="required"></span>
-                                  </label>                      
+                                  </label>
                                   <div class="col-md-9 col-sm-9 col-xs-12">
                                     <input type="text" id="last-name" name="txt_dniper" required="required" class="form-control col-md-7 col-xs-12">
                                   </div>
@@ -122,7 +122,7 @@
 
                                 <div class="form-group">
                                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nombres *<span class="required"></span>
-                                  </label>                      
+                                  </label>
                                   <div class="col-md-9 col-sm-9 col-xs-12">
                                     <input type="text" id="last-name" name="txt_nombreper" required="required" class="form-control col-md-7 col-xs-12">
                                   </div>
@@ -130,18 +130,18 @@
 
                                 <div class="form-group">
                                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellidos *<span class="required"></span>
-                                  </label>                      
+                                  </label>
                                   <div class="col-md-9 col-sm-9 col-xs-12">
                                     <input type="text" id="last-name" name="txt_apellidoper" required="required" class="form-control col-md-7 col-xs-12">
                                   </div>
-                                </div>                
-                                
-                                   <?php 
+                                </div>
+
+                                   <?php
                                       require_once('clases/conexion.php');
 
                                        $seleccionar = $pdo->prepare("SELECT * FROM carrera");
                                        $seleccionar->execute();
-                                     ?> 
+                                     ?>
 
                                       <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Carrera *</label>
@@ -150,20 +150,20 @@
                                             <?php
                                               foreach ($seleccionar as $r) {
                                                  echo "<option value=".$r[0].">".$r[1]."</option>";
-                                               } 
+                                               }
                                              ?>
                                           </select>
                                         </div>
-                                      </div> 
+                                      </div>
 
 
                                        <?php
-                                         //Consultado mencion. 
+                                         //Consultado mencion.
                                         require_once('clases/conexion.php');
 
                                          $seleccionar = $pdo->prepare("SELECT * FROM mencion");
                                          $seleccionar->execute();
-                                       ?> 
+                                       ?>
 
                                         <div class="form-group">
                                           <label class="control-label col-md-3 col-sm-3 col-xs-12">Mencion *</label>
@@ -172,21 +172,21 @@
                                               <?php
                                                 foreach ($seleccionar as $r) {
                                                    echo "<option value=".$r[0].">".$r[1]."</option>";
-                                                 } 
+                                                 }
                                                ?>
                                             </select>
                                           </div>
-                                        </div> 
+                                        </div>
 
 
 
                                        <?php
-                                       //Consultado modalidad. 
+                                       //Consultado modalidad.
                                         require_once('clases/conexion.php');
 
                                          $seleccionar = $pdo->prepare("SELECT * FROM modalidad");
                                          $seleccionar->execute();
-                                       ?> 
+                                       ?>
 
                                         <div class="form-group">
                                           <label class="control-label col-md-3 col-sm-3 col-xs-12">Modalidad *</label>
@@ -195,20 +195,20 @@
                                               <?php
                                                 foreach ($seleccionar as $r) {
                                                    echo "<option value=".$r[0].">".$r[1]."</option>";
-                                                 } 
+                                                 }
                                                ?>
                                             </select>
                                           </div>
-                                        </div> 
+                                        </div>
 
 
                                          <?php
-                                           //Consultado modalidad. 
+                                           //Consultado modalidad.
                                             require_once('clases/conexion.php');
 
                                              $seleccionar = $pdo->prepare("SELECT * FROM  horario_clases");
                                              $seleccionar->execute();
-                                           ?> 
+                                           ?>
 
                                             <div class="form-group">
                                               <label class="control-label col-md-3 col-sm-3 col-xs-12">Jornada *</label>
@@ -217,21 +217,21 @@
                                                   <?php
                                                     foreach ($seleccionar as $r) {
                                                        echo "<option value=".$r[0].">".$r[1]."</option>";
-                                                     } 
+                                                     }
                                                    ?>
                                                 </select>
                                               </div>
-                                            </div> 
+                                            </div>
 
 
 
 
-                                       <?php 
+                                       <?php
                                       require_once('clases/conexion.php');
 
                                        $seleccionar = $pdo->prepare("SELECT * FROM pais");
                                        $seleccionar->execute();
-                                     ?> 
+                                     ?>
 
                                       <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Nacionalidad *</label>
@@ -240,18 +240,18 @@
                                             <?php
                                               foreach ($seleccionar as $r) {
                                                  echo "<option value=".$r[0].">".$r[1]."</option>";
-                                               } 
+                                               }
                                              ?>
                                           </select>
                                         </div>
-                                      </div>        
-                               
-                                
+                                      </div>
+
+
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
-                                  <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-6">           
+                                  <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-6">
                                     <input class="btn btn-primary" type="submit" value="GUARDAR">
-                                    
+
                                   </div>
                                 </div>
 
@@ -259,34 +259,34 @@
                             </div>
                           </div>
                         </div>
-                      </div>  
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-                
+
 
                  <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="x_panel">
                     <div class="x_title">
-                      <h2>Datos</h2>                     
+                      <h2>Datos</h2>
                       <div class="clearfix"></div>
                     </div>
-                    <div class="x_content">                    
+                    <div class="x_content">
                       <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                           <tr>
-                            <th>N* de persona</th>                            
+                            <th>N* de persona</th>
                             <th>Identidad</th>
                             <th>Nombres</th>
                             <th>Apellidos</th>
-                            <th>Carrera</th> 
+                            <th>Carrera</th>
                             <th>Mencion</th>
                             <th>Modalidad</th>
                             <th>Jornada</th>
-                            <th>Pais</th>   
+                            <th>Pais</th>
                             <th>Accion</th>
-                            <th>Accion</th>                      
+                            <th>Accion</th>
                           </tr>
                         </thead>
 
@@ -300,7 +300,7 @@
                 </div>
 
         </div>
-       
+
 
         <!--Pie de página -->
         <?php require_once('include/footer.php'); ?>
@@ -310,6 +310,6 @@
 
      <!-- Incluyendo los links de píe de página como: Jquery, DataTables, Js--->
     <?php require_once "include/link_footer.php"; ?>
-	
+
 </body>
 </html>
