@@ -136,6 +136,22 @@
                                   </div>
                                 </div>
 
+                                 <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Email *<span class="required"></span>
+                                  </label>
+                                  <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <input type="text" id="last-name" name="txt_emailper" required="required" class="form-control col-md-7 col-xs-12">
+                                  </div>
+                                </div>
+
+                                 <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Password *<span class="required"></span>
+                                  </label>
+                                  <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <input type="password" id="last-name" name="txt_passwordper" required="required" class="form-control col-md-7 col-xs-12">
+                                  </div>
+                                </div>
+
                                    <?php
                                       require_once('clases/conexion.php');
 
