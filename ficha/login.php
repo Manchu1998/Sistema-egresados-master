@@ -18,10 +18,10 @@
  	      	session_start();
 
  	      	$fila = $consulta->fetch();
-              $_SESSION['dni_persona'] = $fila['dni_persona'];
- 	      	  $_SESSION['nombres_persona'] = $fila['nombres_persona'];
+              $_SESSION['dni_persona']       = $fila['dni_persona'];
+ 	      	  $_SESSION['nombres_persona']   = $fila['nombres_persona'];
+ 	      	  $_SESSION['email_persona']     = $fila['email_persona'];
  	      	  $_SESSION['apellidos_persona'] = $fila['apellidos_persona'];
-
 
  	      	  header('location:ficha.php');
 

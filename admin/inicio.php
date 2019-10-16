@@ -29,7 +29,7 @@
                   </div>
                   <div class="profile_info">
                     <span>Administrador,</span>
-                    <h2><?php echo $_SESSION['nombre']; ?></h2>
+                    <h2></h2>
                   </div>
               </div>
 
@@ -104,7 +104,7 @@
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-5">
                       <h5><strong>Bienvenido</strong></h5>
-                      <h4><strong>Nombre</strong>:  <?php echo $_SESSION['nombre']; ?></h4>
+                      <h4><strong>Nombre</strong>: </h4>
                     </div>
 
 
