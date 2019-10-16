@@ -10,7 +10,7 @@
  	   $consulta = $pdo->prepare("SELECT * FROM persona WHERE dni_persona =:dni AND password_persona= :password");
 
  	   $consulta->bindParam(':dni', $usuario);
- 	   $consulta->bindParam(':dni', $password);
+ 	   $consulta->bindParam(':password', $password);
  	   $consulta->execute();
 
  	      if ($consulta->rowCount()>=1) {
