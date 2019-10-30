@@ -170,7 +170,6 @@
                           </tr>
                         </thead>
 
-
                         <tbody>
                           <?php  require_once('consultas/consulta_horario.php'); ?>
                         </tbody>
@@ -180,11 +179,6 @@
                 </div>
             </div>
 
-              <script type="text/javascript">
-
-                    swal("Los Datos han sido actualizados correctamente!", "!", "success");
-
-              </script>
         </div>
 
 

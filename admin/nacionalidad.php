@@ -170,11 +170,10 @@
                             <th>Accion</th>
                           </tr>
                         </thead>
-
-
                         <tbody>
                           <?php  require_once('consultas/consulta_nacionalidad.php'); ?>
                         </tbody>
+
                       </table>
                     </div>
                   </div>
