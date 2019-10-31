@@ -28,7 +28,7 @@
                     <img src="../assets/img/itsae.png" alt="..." class="img-circle profile_img">
                   </div>
                   <div class="profile_info">
-                    <span>Administrador,</span>
+                    <span>Administrador</span>
                     <h2></h2>
                   </div>
               </div>
@@ -96,7 +96,7 @@
                     <div class="col-md-8 col-lg-8 col-sm-7">
                       <!-- blockquote -->
                       <blockquote>
-                        <p>Panel de administrador.</p>
+                        <p><?php echo ; ?>Bienvenido a Panel de administrador.</p>
                         </footer>
                       </blockquote>
 
