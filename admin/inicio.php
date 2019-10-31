@@ -96,15 +96,14 @@
                     <div class="col-md-8 col-lg-8 col-sm-7">
                       <!-- blockquote -->
                       <blockquote>
-                        <p><?php echo ; ?>Bienvenido a Panel de administrador.</p>
+                        <p><strong><?php echo $_SESSION['nombre']; ?> </strong> Bienvenido a Panel de administrador.</p>
                         </footer>
                       </blockquote>
 
 
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-5">
-                      <h5><strong>Bienvenido</strong></h5>
-                      <h4><strong>Nombre</strong>: </h4>
+                      <h4><strong>Su nombre: </strong> <?php echo $_SESSION['nombre']; ?></h4>
                     </div>
 
 
