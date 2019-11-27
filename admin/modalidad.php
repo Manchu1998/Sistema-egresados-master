@@ -71,7 +71,7 @@
         <div class="right_col" role="main">
             <div class="page-title">
               <div class="title_left">
-                <h3>Configuración de Modalidad</h3>
+                <h4>Configuración de Modalidad</h4>
               </div>
 
               <div class="title_right">
@@ -87,7 +87,7 @@
             </div>
 
 
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-lg">Agregar modalidad</button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-lg">Nuevo Modalidad</button>
 
                   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -140,14 +140,10 @@
                   </div>
 
 
-                 <div class="col-md-12 col-sm-12 col-xs-12">
+
                   <div class="x_panel">
                     <div class="x_title">
                       <h2>Datos</h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
                       <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -162,7 +158,6 @@
                       <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                           <tr>
-                            <th>N* de modalidad</th>
                             <th>Modalidad</th>
                             <th>Estado</th>
                             <th>Accion</th>
@@ -178,8 +173,6 @@
                     </div>
                   </div>
                 </div>
-
-            </div>
 
 
         <!--Pie de página -->

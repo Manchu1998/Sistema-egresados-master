@@ -73,7 +73,7 @@
         <div class="right_col" role="main">
            <div class="page-title">
             <div class="title_left">
-              <h3>Configuración de horario de clases</h3>
+              <h4>Configuración de Jornada</h4>
             </div>
             <div class="title_right">
               <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
@@ -89,7 +89,7 @@
 
 
           <!--Modal de insertar los datos a la base de Datos-->
-          <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".mimodal">Agregar horario</button>
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".mimodal">Nuevo Jornada</button>
             <div class="modal fade mimodal" tabindex="-1" role="dialog" aria-hidden="true">
                <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -98,7 +98,7 @@
                       <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                           <div class="x_title">
-                            <h2>Formulario de horario<small>*</small></h2>
+                            <h2>Formulario de Jornada<small>*</small></h2>
                             <div class="clearfix"></div>
                           </div>
                           <div class="x_content">
@@ -108,7 +108,7 @@
                             <form action="clases/insertar_horario.php"  data-parsley-validate class="form-horizontal form-label-left" method="POST" autocomplete="off">
 
                               <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Horario</label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Jornada</label>
                                 <div class="col-md-9 col-sm-9 col-xs-12">
                                   <input type="text" id="last-name" name="txt_descrihora" required="required" class="form-control col-md-7 col-xs-12">
                                 </div>
@@ -162,7 +162,6 @@
                       <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                           <tr>
-                            <th>N* de horario</th>
                             <th>Horario</th>
                             <th>Jornada</th>
                             <th>Accion</th>

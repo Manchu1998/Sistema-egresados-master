@@ -8,7 +8,6 @@
    if ($consulta->rowCount()>=1) {
    	 while ($fila = $consulta->fetch()) {
    	 	  echo "<tr>
-                  <td>".$fila['carrera_id']."</td>
    	 	            <td>".$fila['carrera_name']."</td>
    	 	            <td>".$fila['carrera_estado']."</td>
                    <td><a href='actualizaciones/actualizar_carrera.php?carrera_id=".$fila['carrera_id']."' class='btn btn-primary'>Editar </a></td>

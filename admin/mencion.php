@@ -71,7 +71,7 @@
         <div class="right_col" role="main">
             <div class="page-title">
               <div class="title_left">
-                <h3>Configuración de menciones</h3>
+                <h4>Configuración de menciones</h4>
               </div>
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
@@ -86,7 +86,7 @@
             </div>
 
 
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-lg">Agregar mencion</button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-lg">Nueva Mencion</button>
 
                   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -113,7 +113,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Estado de mencion</label>
+                                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Estado</label>
                                       <div class="col-md-9 col-sm-9 col-xs-12">
                                         <input type="text" id="last-name" name="txt_estado" required="required" class="form-control col-md-7 col-xs-12">
                                       </div>
@@ -138,7 +138,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-12 col-sm-12 col-xs-12">
+
                     <div class="x_panel">
                       <div class="x_title">
                         <h2>Datos</h2>
@@ -152,7 +152,6 @@
                         <table id="datatable" class="table table-striped table-bordered">
                           <thead>
                             <tr>
-                              <th>N* de mencion</th>
                               <th>Mencion</th>
                               <th>Modalidad</th>
                               <th>Accion</th>
@@ -168,8 +167,6 @@
                       </div>
                     </div>
                   </div>
-
-              </div>
 
 
         <!--Pie de página -->

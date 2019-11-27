@@ -89,7 +89,7 @@
 
 
 
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-lg">Agregar persona </button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bs-example-modal-lg">Nuevo Egresado/Graduado</button>
 
               <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -282,7 +282,7 @@
               </div>
 
 
-                 <div class="col-md-12 col-sm-12 col-xs-12">
+
                   <div class="x_panel">
                     <div class="x_title">
                       <h2>Datos</h2>
@@ -292,10 +292,10 @@
                       <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                           <tr>
-                            <th>N* de persona</th>
                             <th>Identidad</th>
                             <th>Nombres</th>
                             <th>Apellidos</th>
+                            <th>Email</th>
                             <th>Carrera</th>
                             <th>Mencion</th>
                             <th>Modalidad</th>
@@ -312,10 +312,8 @@
                         </tbody>
                       </table>
                     </div>
-                  </div>
                 </div>
-
-        </div>
+             </div>
 
 
         <!--Pie de página -->

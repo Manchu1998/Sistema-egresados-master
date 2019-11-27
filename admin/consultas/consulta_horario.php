@@ -7,7 +7,6 @@
    if ($consulta->rowCount()>=1) {
    	 while ($fila = $consulta->fetch()) {
    	 	  echo "<tr>
-                  <td>".$fila['horario_id']."</td>
    	 	            <td>".$fila['horario']."</td>
    	 	            <td>".$fila['estado']."</td>
                   <td><a href='actualizaciones/actualizar_horario.php?horario_id=".$fila['horario_id']."' class='btn btn-primary'>Editar </a></td>

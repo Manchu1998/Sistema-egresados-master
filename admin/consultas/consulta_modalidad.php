@@ -8,7 +8,6 @@
    if ($consulta->rowCount()>=1) {
    	 while ($fila = $consulta->fetch()) {
    	 	  echo "<tr>
-                  <td>".$fila['modalidad_id']."</td>
    	 	            <td>".$fila['modalidad_name']."</td>
    	 	            <td>".$fila['modalidad_estado']."</td>
                  <td><a href='actualizaciones/actualizar_modalidad.php?modalidad_id=".$fila['modalidad_id']."' class='btn btn-primary'>Editar </a></td>
