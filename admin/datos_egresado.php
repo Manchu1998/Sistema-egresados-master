@@ -73,7 +73,7 @@
         <div class="right_col" role="main">
             <div class="page-title">
               <div class="title_left">
-                <h3>Datos generales</h3>
+                <h4>Datos generales</h4>
               </div>
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
@@ -87,61 +87,12 @@
               </div>
             </div>
 
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-               <a href="reporte/reporte.php"><button type="button" class="btn btn-dark">Reporte</button></a>
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Datos</h2>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content container" >
-                  <table id="datatable" class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <th>Cedula</th>
-                        <th>Nombres</th>
-                        <th>Apellidos</th>
-                        <th>Nacimiento</th>
-                        <th>Nacionalidad</th>
-                        <th>Telefono</th>
-                        <th>Sexo</th>
-                        <th>Acta grado</th>
-                        <th>Carrera</th>
-                        <th>Mencion</th>
-                        <th>Modalidad</th>
-                        <th>Academico</th>
-                        <th>Ingreso</th>
-                        <th>Egreso</th>
-                        <th>Graduacion</th>
-                        <th>Ocupacion</th>
-                        <th>Empresa</th>
-                        </tr>
-                    </thead>
-
-
-                    <tbody>
-                      <?php include_once('consultas/consulta_encuesta.php'); ?>
-                    </tbody>
-                  </table>
-                </div>
-
-              </div>
-            </div>
-
-
+          <?php include_once 'include/tabla_egresado.php'; ?>
 
           <div class="clearfix"></div>
-
-
-
-
         </div>
-
-
         <!--Pie de página -->
         <?php require_once('include/footer.php'); ?>
-
       </div>
     </div>
 
