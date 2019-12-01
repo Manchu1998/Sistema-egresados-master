@@ -1,5 +1,5 @@
-<?php 
-  
+<?php
+
   include_once('../clases/conexion.php');
 
   $id= $_GET['mencion_id'];
@@ -11,7 +11,8 @@
   	 echo "Datos eliminados existosamente";
   	 header("location:../mencion.php");
   } else {
-  	  echo "Error al borrar";
+  	  echo "";
+      header("location:../mencion.php");
   }
-  
+
 

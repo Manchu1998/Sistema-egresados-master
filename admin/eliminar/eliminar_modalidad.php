@@ -1,5 +1,5 @@
-<?php 
-  
+<?php
+
   include_once('../clases/conexion.php');
 
   $id= $_GET['modalidad_id'];
@@ -11,7 +11,9 @@
   	 echo "Datos eliminados existosamente";
   	 header("location:../modalidad.php");
   } else {
-  	  echo "Error al borrar";
+  	  echo "<script>alert('Estos datos estan siendo ocupados');
+  	  </script>";
+  	   header("location:../modalidad.php");
   }
-  
+
 

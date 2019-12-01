@@ -1,5 +1,5 @@
-<?php 
-  
+<?php
+
   include_once('../clases/conexion.php');
 
   $id= $_GET['pais_id'];
@@ -12,6 +12,7 @@
   	 header("location:../nacionalidad.php");
   } else {
   	  echo "Error al borrar";
+      header("location:../nacionalidad.php");
   }
-  
+
 

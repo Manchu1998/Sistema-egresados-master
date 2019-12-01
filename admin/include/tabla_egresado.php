@@ -14,7 +14,7 @@
               <th class="column-title">DNI</th>
               <th class="column-title">Nombres</th>
               <th class="column-title">Apellidos</th>
-              <th class="column-title">Fecha Nacimiento.</th>
+              <th class="column-title">Fecha Nacimiento</th>
               <th class="column-title">Nacionalidad</th>
               <th class="column-title">Telefono </th>
               <th class="column-title">Genero </th>
@@ -28,11 +28,8 @@
               <th class="column-title">Fecha graduacion</th>
               <th class="column-title">Ocupacion actual</th>
               <th class="column-title">Empresa</th>
-              <th class="column-title no-link last"><span class="nobr">Action</span>
-              </th>
-              <th class="bulk-actions" colspan="7">
-              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
-              </th>
+
+
             </tr>
           </thead>
         <tbody>

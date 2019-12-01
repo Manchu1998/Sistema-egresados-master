@@ -203,7 +203,7 @@
 
                       </div>
                       <div class="text-right mt-3 mb-3">
-                        <a href="../admin/reporte/reporte_pdf.php" class="btn btn-success">Generar PDF</a>
+                         <a href="../admin/reporte/reporte.php"><button type="button" class="btn btn-dark">Generar Excel</button></a>
                         <input type="submit" class="btn btn-danger" value="Enviar datos">
                       </div>
                     </div>
@@ -214,10 +214,10 @@
             </div>
             <div class="col-md-4">
               <div class="card card-profile card-secondary">
-                <div class="card-header" style="background-image: url('estilo/assets/img/blogpost.jpg')">
+                <div class="card-header" style="background-image: url('estilo/assets/img/itsae.jpeg')">
                   <div class="profile-picture">
                     <div class="avatar avatar-xl">
-                      <img src="estilo/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="estilo/assets/img/user-icon.png" alt="..." class="avatar-img rounded-circle">
                     </div>
                   </div>
                 </div>
